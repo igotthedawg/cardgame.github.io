@@ -1,0 +1,1 @@
+Code is almost complete. Just need to figure out how to remove an eventListener for each node within the node list.

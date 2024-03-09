@@ -16,6 +16,7 @@ body {
     backdrop-filter: blur(5px);
     border-radius: 20px;
     border-style: solid;
+   
     display: grid;
     width: 500px;
     height: 400px;
@@ -28,10 +29,18 @@ body {
   }
 .Game-End{
   background-color: green;
+   text-align: center;
+  width: 400px;
+  border-radius: 25px;
+  border: 5px solid #ccc;
+  height: 150px;
+  bottom: 35%;
   position: fixed;
   display: none;
 }
-  
+  .Winner-Banner{
+    border-radius: 25px;
+  }
   
   [data-position] {
     width: 100px;
@@ -107,40 +116,18 @@ body {
   .Card.is-flipped {
     transform: rotateY(180deg);
   }
-  
-  /* [data-position="1"] {
-    grid-column: span 1;
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Start with fully transparent */
+    }
+    to {
+      opacity: 1; /* End with fully opaque */
+    }
+  }  
+
+  .Game-End.Animated{
+    transform: rotateY(180deg);
+    animation: fadeIn 1s ease-in;
   }
-  
-  [data-position="2"] {
-    grid-column: span 1;
-  }
-  
-  [data-position="3"] {
-    grid-column: span 1;
-  }
-  
-  [data-position="4"] {
-    grid-column: span 1;
-  }
-  
-  [data-position="5"] {
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-  
-  [data-position="6"] {
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-  
-  [data-position="7"] {
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-  
-  [data-position="8"] {
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-   */
+
+ 
